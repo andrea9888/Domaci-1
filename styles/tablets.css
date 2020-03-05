@@ -4,30 +4,21 @@
       }
       .img-ellipse1{
           display: block;
+          width: 40vw;
       }
       .img-ellipse2{
             display: block;
+            width:40vw;
         }
-        #ellipse1{
-            width: 90vw;
-            height: 80vh;
-        }
-        #ellipse2{
-            width: 90vw;
-            height: 80vh;
-        }
-        #ellipse3{
-            width: 90vw;
-            height: 80vh;
-        }
-       
+        
     .item3{
+
         display: grid;
         grid-template-areas:
         'part1 part2 part3';
         grid-auto-columns: 1fr;
         justify-items: center;
-        
+        grid-gap: 1vw;
         
     }
     .part1{
@@ -44,10 +35,7 @@
         grid-area: part3;
         justify-self: center;
     }
-    .chart3-back{
-        position: absolute;
-        top:3.5rem;
-        left:16rem;
-    }
+ 
+   
     
 }
