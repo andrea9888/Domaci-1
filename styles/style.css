@@ -9,7 +9,8 @@ body{
     'left right'
     'subtitle subtitle'
     'center center'
-    'achivements purpose';
+    'achivements purpose'
+    'team circles';
     grid-auto-columns: 1fr;
     margin: 0;
 }
@@ -329,3 +330,65 @@ p{
     left:2vw;
     
 } 
+.item6{
+    grid-area:circles;
+    position: relative;
+    overflow: hidden;
+}
+.circles{
+    position: relative;
+    
+}
+.circle{
+    border-radius: 50%;
+    background: #ffffff;
+    z-index:-1;
+}
+.circle1{
+    width:25vw;
+    height:25vw;
+    border:10vw solid rgba(211,211,211,0.1);
+    position: absolute;
+    top:0;
+    right:-10vw;
+    
+}
+.circle2{
+    width:15vw;
+    height:15vw;
+    border:5vw solid rgba(211,211,211,0.3);
+    position: absolute;
+    top:0;
+    right:0;
+        
+}
+.circle3{
+    width:5vw;
+    height:5vw;
+    border:5vw solid rgba(211,211,211,0.1);
+    position: absolute;
+    top:0;
+    right:0;
+}
+.over-circles1{
+    width:30vw;
+    position: absolute;
+    z-index:1;
+    right:5vw;
+    bottom:5vw;
+    display: none;
+}
+.over-circles2{
+    width:30vw;
+    position: absolute;
+    z-index:2;
+    right:0;
+    bottom:10vw;
+    display: none;
+}
+.item7{
+    grid-area:team;
+    margin-top:12vw;
+    margin-left:15vw;
+    min-width: 0;
+}
