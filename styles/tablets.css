@@ -36,6 +36,11 @@
         justify-self: center;
     }
  
-   
+    .achievements{
+        display:block;
+    }
+    .ranking{
+        display: block;
+    }
     
 }
