@@ -10,9 +10,13 @@ body{
     'subtitle subtitle'
     'center center'
     'achivements purpose'
-    'team circles';
+    'team circles'
+    'footer shapes';
     grid-auto-columns: 1fr;
     margin: 0;
+    padding: 0;
+    
+    
 }
 h1{
     font-size: 5vw;
@@ -312,7 +316,7 @@ p{
 
 }
 .p3{
-    margin-top: 9vw;
+    padding-top: 2.5vw;
     color: #000000;
     text-align:left;
     font-size:1.5vw;
@@ -326,7 +330,7 @@ p{
     font-size:2vw;
     color:#fd5353;
     position: absolute;
-    top:-2.5vw;
+    top:0;
     left:2vw;
     
 } 
@@ -391,4 +395,75 @@ p{
     margin-top:12vw;
     margin-left:15vw;
     min-width: 0;
+}
+.item8{
+    grid-area: footer;
+    margin-right:-20vw;
+    margin-top:-10vw;
+}
+.item9{
+    
+    padding:20vw 0;
+    grid-area:shapes;
+    position: relative;
+    overflow: hidden;
+    
+}
+.r3{
+    display: none;
+}
+
+.line-rounded-reverse{
+    width:35vw;
+    height:10vw;
+    background: #fd5353;
+    border-radius:5vw;
+    transform: rotate(-45deg);
+    position: absolute;
+    right:-10vw;
+}
+
+.half-circle-reverse{
+    width:10vw;
+    height:10vw;
+    border:15vw solid #3a4151;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top:35vw;
+    right:-20vw;
+    
+}
+.review{
+    width:50vw;
+    flex:1;
+    margin-bottom:-10vw;
+    
+
+}
+
+.h2-f{
+    text-align: center;
+    padding: 5vw;
+    width:20vw;
+}
+.p-f{
+    text-align: center;
+    padding: 5vw 0 0 10vw;
+    width:30vw;
+}
+.input-f{
+    margin-bottom: 10vw;
+    width:10vw;
+    padding-top: 2vw;
+    padding-bottom: 10vw;
+    margin: 0 0 0 5vw;
+}
+.item81{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.item82{
+    padding: 5vw 0 5vw 5vw;
 }
