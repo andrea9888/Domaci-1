@@ -49,4 +49,51 @@
     .over-circles2{
         display: block;
     }
+    .review{
+        width:35vw;
+        margin-right: -12vw;
+    }
+   
+    .r3{
+        display: block;
+        grid-area:r3;
+    }
+    .r1{
+        grid-area:r1;
+    }
+    .r2{
+        grid-area:r2;
+    }
+    .line-rounded-reverse{
+        position: absolute;
+        z-index:-1;
+    }
+    .thin-line{
+        position: absolute;
+        z-index:-2;
+    }
+    .images{
+        width: 30vw;
+        display: grid;
+        grid-template-areas:
+        'r1 r2 r3';
+        grid-auto-columns: 1fr;
+        justify-items: center;
+        
+        
+    }
+    .item81{
+        position: relative;
+    }
+   .h2-f{
+       position: absolute;
+       top:5vw;
+       left:10vw;
+
+
+   }
+    
+    
+    
+    
 }
