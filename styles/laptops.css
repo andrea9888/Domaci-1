@@ -1,12 +1,86 @@
 @media only screen and (min-width: 1200px){
     .img-ellipse3{
         display:block;
+        animation-name:fade-in;
+        animation-duration: 5s;
+        animation-delay: 4s;
     }
     .img-ellipse4{
         display:block;
+        animation-name:fade-in;
+        animation-duration: 5s;
+        animation-delay: 6s;
+    }
+    .img-ellipse2{
+        animation-name:fade-in;
+        animation-duration: 5s;
+        animation-delay: 2s;
+
+    }
+    .img-ellipse1{
+        animation-name:fade-in;
+        animation-duration: 5s;
+        animation-delay: 8s;
     }
    
     .h2-f{
         font-size:2.5vw;
     }
+    
+    @keyframes fade-in {
+        0%{
+            opacity:0;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        100%{
+            opacity:1;
+        }
+    }
+    .chart3-back{
+        animation: spin 10s linear infinite;
+    }
+        
+    @keyframes spin {
+        0% {
+            transform: rotateZ(0);
+        }
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+  
+    .example{
+        overflow: hidden; 
+        border-right: 0.1vw solid orange; 
+        white-space: nowrap; 
+        margin: 0 auto;
+        letter-spacing: 0.1vw; 
+        animation: 
+          typing 10s steps(25,end) infinite,
+          blink-cursor 1s steps(25,end) infinite;
+      }
+      
+      
+    @keyframes typing {
+        0%, 100% {
+            width: 0;
+          }
+          20%, 80% {
+            width: 19.5vw;
+          }
+        }
+      
+    @keyframes blink-cursor {
+        from, to {
+            border-color: transparent; 
+        }
+        50% { 
+            border-color: orange; 
+        }
+      }
+    
+    
+    
 }

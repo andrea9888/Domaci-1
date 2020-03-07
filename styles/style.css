@@ -17,6 +17,7 @@ html{
   }
 
 body{
+    position: relative;
     display:grid;
     grid-gap: 10vw;
     grid-template-areas:
@@ -33,6 +34,7 @@ body{
     
 }
 h1{
+    margin-top: 10vw;
     width: 50.5vw;
     height: 15vw;
     font-size: 5vw;
@@ -181,7 +183,7 @@ h2{
     height: auto;
     position: absolute;
     left:0;
-    bottom:10vw;
+    bottom:15vw;
     z-index:1;
     display:none;
  
@@ -191,7 +193,7 @@ h2{
     height: auto;
     position: absolute;
     right:2vw;
-    bottom:10vw;
+    bottom:15vw;
     z-index:2;
     display:none;
 }
@@ -199,8 +201,8 @@ h2{
     width:45vw;
     height: auto;
     position: absolute;
-    left:-5vw;
-    bottom:25vw;
+    left:0;
+    bottom:30vw;
     z-index:3;
     display:none;
 }
@@ -208,8 +210,7 @@ h2{
 
 .item1{
     grid-area: left;
-    margin-left: 5rem;
-    margin-top: 5rem;
+    margin-left: 3vw;
     min-width: 0;
 }
 .item2{
@@ -316,7 +317,7 @@ p{
     width:30vw;
     position: absolute;
     top:5vw;
-    right:0;
+    right:-7vw;
     z-index: 2;
     display: none;
 }
@@ -504,3 +505,56 @@ p{
     
 }
   
+ul {
+    list-style-type: none;
+    margin: 0 0 0 -3vw;
+    padding: 0;
+    overflow: hidden;
+    background-color:transparent;
+    box-shadow: 0 0.1vw rgba(211,211,211,0.2);
+  }
+  
+  li {
+    float: left;
+    transition: background-color 1s;
+   
+  }
+  li img{
+    width:2vw;
+    display: block;
+    padding: 1vw 4vw;
+  }
+  
+  li a {
+    color: #ffb75280;
+    font-size: 1.5vw;
+    font-family: "Muli", sans-serif;
+    text-align: center;
+    padding: 2vw 3vw;
+    text-decoration: none;
+    display:none;
+    transition: display 1s ease-in-out;
+    
+  }
+  
+  li:hover{
+    background-color: rgba(211,211,211,0.3);
+    
+  }
+ 
+  li:hover a{
+      display:block;
+      
+  }
+  .input-f{
+      position: relative;
+      width:100%;
+  }
+  .example{
+      color:rgba(211,211,211,0.8);
+      font-size: 1.8vw;
+      font-family:"Muli", sans-serif;
+      position: absolute;
+      bottom:0.7vw;
+      left:5vw;
+  }
