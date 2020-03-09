@@ -526,35 +526,30 @@ ul {
   }
   
   li a {
+
     color: #ffb75280;
     font-size: 1.5vw;
     font-family: "Muli", sans-serif;
     text-align: center;
-    padding: 2vw 3vw;
+    padding: 1vw 3vw;
     text-decoration: none;
-    display:none;
     transition: display 1s ease-in-out;
     
   }
   
-  li:hover{
-    background-color: rgba(211,211,211,0.3);
-    
-  }
- 
-  li:hover a{
-      display:block;
-      
-  }
+  
+  
+  
   .input-f{
       position: relative;
       width:100%;
   }
   .example{
-      color:rgba(211,211,211,0.8);
+      color:rgb(211,211,211);
       font-size: 1.8vw;
       font-family:"Muli", sans-serif;
       position: absolute;
       bottom:0.7vw;
       left:5vw;
   }
+  

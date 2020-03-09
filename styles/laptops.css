@@ -3,26 +3,28 @@
         display:block;
         animation-name:fade-in;
         animation-duration: 5s;
-        animation-delay: 10s;
+        animation-delay: 15s;
     }
     .img-ellipse4{
         display:block;
         animation-name:fade-in;
         animation-duration: 5s;
-        animation-delay: 15s;
+        animation-delay: 10s;
     }
     .img-ellipse2{
         animation-name:fade-in;
         animation-duration: 5s;
-        animation-delay: 5s;
+        animation-delay: 20s;
 
     }
     .img-ellipse1{
         animation-name:fade-in;
         animation-duration: 5s;
-        animation-delay: 20s;
+        animation-delay: 5s;
     }
-   
+    .item2{
+        transition: .5s;
+    }
     .h2-f{
         font-size:2.5vw;
     }
@@ -30,6 +32,7 @@
     @keyframes fade-in {
         0%{
             opacity:0;
+            
         }
         50%{
             opacity: 0.5;
@@ -40,49 +43,37 @@
             z-index:5;
         }
     }
-    .chart3-back{
-        animation: spin 10s linear infinite;
-    }
+    
+    .card{
+        height: 70%;
+        padding:2vw 2vw 1vw;
+        animation: none;
         
-    @keyframes spin {
-        0% {
-            transform: rotateZ(0);
-        }
-        100% {
-            transform: rotateZ(360deg);
-        }
-    }
-  
-    .example{
-        overflow: hidden; 
-        border-right: 0.1vw solid orange; 
-        white-space: nowrap; 
-        margin: 0 auto;
-        letter-spacing: 0.1vw; 
-        animation: 
-          typing 10s steps(25,end) infinite,
-          blink-cursor 1s steps(25,end) infinite;
+        
       }
-      
-      
-    @keyframes typing {
-        0%, 100% {
-            width: 0;
+      .card:hover{
+          animation: pop .2s;
+          animation-fill-mode: forwards;
+          
+      }
+      @keyframes pop{
+          from{
+              
+              border-radius: 3vw;
           }
-          20%, 80% {
-            width: 19.5vw;
-          }
-        }
-      
-    @keyframes blink-cursor {
-        from, to {
-            border-color: transparent; 
-        }
-        50% { 
-            border-color: orange; 
+        to{
+            
+           transform:scale(1.01);
+
+            box-shadow: 0 .1vw .1vw rgba(136, 136, 136, 0.3), 
+                        0 .2vw .2vw rgba(136, 136, 136, 0.25), 
+                        0 .4vw .4vw rgba(136, 136, 136, 0.2), 
+                        0 .8vw .8vw rgba(136, 136, 136, 0.15), 
+                        0 1.6vw 1.6vw rgba(136, 136, 136, 0.1), 
+                        0 3.2vw 3.2vw rgba(136, 136, 136, 0.05);
+            border-radius: 4vw;
+
         }
       }
-    
-    
-    
+     
 }

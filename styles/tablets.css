@@ -90,7 +90,69 @@
        top:5vw;
        left:10vw;
    }
+   .circle{
+        background: rgba(58, 65, 81, 0.1);
+        animation: scaleIn 2s infinite cubic-bezier(.36, .11, .89, .32);
+        animation-fill-mode: forwards;
+  }
+    .circle1{
+        animation-delay: 0s;
+    }
+    .circle2{
+        animation-delay: 4s;
+    }
+    .circle3{
+        animation-delay: 6s;
+        
+    }
+
+    @keyframes scaleIn {
+        0% {
+            transform: scale(.5, .5);
+        
+        }
+        50% {
+            transform: scale(1.1, 1.1);
+            
+        
+        }
+        100%{
+            transform: scale(.5, .5);
+        }
+    }
     
+    .example{
+        overflow: hidden; 
+        border-right: 0.1vw solid orange; 
+        white-space: nowrap; 
+        margin: 0 auto;
+        letter-spacing: 0.1vw; 
+        animation: 
+          typing 10s steps(25,end) infinite,
+          blink-cursor 1s steps(25,end) infinite;
+      }
+      
+      
+    @keyframes typing {
+        0%, 100% {
+            width: 0;
+          }
+          20%, 80% {
+            width: 19.5vw;
+          }
+        }
+      
+    @keyframes blink-cursor {
+        from, to {
+            border-color: transparent; 
+        }
+        50% { 
+            border-color: orange; 
+        }
+    }
+
+
+
     
     
     
